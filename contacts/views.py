@@ -27,14 +27,20 @@ def contact(request):
         #send email
         send_mail(
             'Propert Listing Inquiry',
-            'There has been an inquiry'+listing+ '.sign into the admin panel for more info',
+            f'There has been an inquiry for {listing}. Sign into the admin panel for more info.',
             'rajkumarr7102002@gmail.com',
-            [realtor_email,'prk7102002@gmail.com'],
+            [realtor_email],
             fail_silently=False
         )
-
-
-
+        if request.user.is_authenticated:
+            
+            send_mail(
+                'Propert Listing Inquiry',
+                f'You have inquiried for {listing}. Sign into the website for more info.',
+                'rajkumarr7102002@gmail.com',
+                [email],
+                fail_silently=False
+            )
 
 
         messages.success(request,"Your request has been submitted, a realtor will get back to you soon")
