@@ -158,3 +158,10 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'rajkumarr7102002@gmail.com'  # Your email
 EMAIL_HOST_PASSWORD = 'cysh fffp dued tfti'  # Your app password
+
+
+try:
+    from .local_settings import *
+
+except ImportError:
+    pass
