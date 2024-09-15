@@ -151,13 +151,13 @@ MESSAGE_TAGS={
 }
 
 #Email Config
-# Email Config
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'rajkumarr7102002@gmail.com'  # Your email
-EMAIL_HOST_PASSWORD = 'cysh fffp dued tfti'  # Your app password
+
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_PORT = 587
+#EMAIL_USE_TLS = True
+#EMAIL_HOST_USER = 'rajkumarr7102002@gmail.com'  # Your email
+#EMAIL_HOST_PASSWORD = 'cysh fffp dued tfti'  # Your app password
 
 
 try:
